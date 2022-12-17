@@ -1,0 +1,127 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: #171c20;
+}
+
+
+main .search-box {
+    height: 100px;
+    width: 100%;
+    background: #ff0084;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #444343, #ff0084);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #3d3c3d, #ff0084); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
+} 
+/* main .search-box .typing{
+    margin: 2% 2% ;
+}
+  */
+input{
+    all: unset;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color:white;
+    opacity: 0.8; /* Firefox */
+
+}
+
+main .search-box .typing {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+
+} 
+
+main .search-box .typing .cross-icon img{
+    height:30px ;
+    width: 30px;
+    padding: 0 25px;
+    float: top ;
+    margin-top: -30px;
+
+}
+
+main .search-box .typing .cross-icon img:hover{
+     color: #2566a2 ;
+}
+main .search-box .typing .search-placeholder input{
+    height:60px;
+    width:80% ;
+    margin: 1% 2.5%;
+    background-color: none;
+    color: white;
+
+    padding:10px;
+
+    font-size: 40px;
+    font-weight: 500;
+
+    line-height: 40px;
+
+    text-transform:capitalize;
+    text-decoration: none;
+ 
+    font-family: 'Chivo Mono', monospace;
+    letter-spacing: 3px;
+
+
+
+
+
+
+
+    
+
+}
+
+.movie-display{
+    padding-top: 40px;
+    margin: 20px ;
+    display: flex;
+    justify-content:center;
+    gap: 30px;
+    /* align-items: center; */
+    flex-wrap:wrap;
+}
+
+.movie-display .movie-component{
+
+    width: 25%;
+    height: 10%;
+    padding: 20px;
+    margin: 20px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 2px yellow solid; */
+    
+    font-family: 'Pacifico', cursive;
+    text-align: justify;
+    font-size: 15px;
+    box-shadow: 0.5rem 0.5rem rgb(222, 235, 37), -0.5rem -0.5rem rgb(60, 225, 243);
+  
+    
+   
+
+
+}
+.movie-display .movie-component a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.movie-display .movie-component .movieImg img{
+    height: 200px;
+    width: 250px;
+    padding: 15px;
+    margin: auto;
+    background-color: #171c20;
+  
+}
+
