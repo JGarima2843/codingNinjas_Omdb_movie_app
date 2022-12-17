@@ -148,7 +148,7 @@ async function displayMovieList(movies){
 
 // -------------->in this when the user is searching for the movie then a list of the related movie will be displayed and that list is fetched
 async function findMovies(){
-    const url=`http://www.omdbapi.com/?s=${(searchInput.value).trim()}&page=1&apikey=${key}`
+    const url=`https://www.omdbapi.com/?s=${(searchInput.value).trim()}&page=1&apikey=${key}`
     const res=await fetch(`${url}`);
     const data=await res.json();
     // console.log(data.Search);
