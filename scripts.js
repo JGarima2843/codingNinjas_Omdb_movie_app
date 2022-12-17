@@ -14,7 +14,7 @@ async function singleMovie(){
     var urlQueryParams=new URLSearchParams(window.location.search);
     var id=urlQueryParams.get('id')
     console.log(id);
-    const url=`http://www.omdbapi.com/?i=${id}&plot=full&apikey=${key}`
+    const url=`https://www.omdbapi.com/?i=${id}&plot=full&apikey=${key}`
     const res=await fetch(`${url}`);
     const data=await res.json();
     console.log(data);
@@ -148,7 +148,7 @@ async function displayMovieList(movies){
 
 // -------------->in this when the user is searching for the movie then a list of the related movie will be displayed and that list is fetched
 async function findMovies(){
-    const url=`http://www.omdbapi.com/?s=${(searchInput.value).trim()}&page=1&apikey=${key}`
+    const url=`https://www.omdbapi.com/?s=${(searchInput.value).trim()}&page=1&apikey=${key}`
     const res=await fetch(`${url}`);
     const data=await res.json();
     // console.log(data.Search);
@@ -171,7 +171,7 @@ async function favoritesMovieLoader(){
         var id=localStorage.getItem(i);
         if(id!=null){
             // fetching the movie through id 
-            const url=`http://www.omdbapi.com/?i=${id}&plot=full&apikey=${key}`
+            const url=`https://www.omdbapi.com/?i=${id}&plot=full&apikey=${key}`
             const res=await fetch(`${url}`);
             const data=await res.json();
             console.log(data);
